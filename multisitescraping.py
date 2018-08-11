@@ -69,12 +69,6 @@ df.to_csv('out.csv', index=False)
 #df.to_csv('out.csv', encoding='utf-8', index=False)
 
 
-#
-#df['Admin_Capital']=C
-#df['Legislative_Capital']=D
-#df['Judiciary_Capital']=E
-#df['Year_Capital']=F
-#df['Former_Capital']=G
                    
 
 
