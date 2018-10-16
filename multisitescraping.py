@@ -65,8 +65,14 @@ for i in job_listing:
 df=df.sort_values(by='Time', ascending=False) 
 print("Total number of jobs", df.shape)
 
-df.to_csv('out.csv', index=False)
-#sdf
+#df.set_option('display.html.render_links',)
+
+# send the results into an HTML page which will open in default browser
+
+df.to_html('filename.html', escape=False)
+webbrowser.open("/home/maninder/filename.html", new=2)
+
+#df.to_csv('out.csv', index=False)
 #df.to_csv('out.csv', encoding='utf-8', index=False)
 
 
